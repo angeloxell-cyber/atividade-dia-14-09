@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="author" content="Projeto Monochampion LoL">
+    <meta name="keywords" content="League of Legends, LoL, monochampion, main, campeão, ranked, treino">
+    <title>Formulário - Projeto Monochampion LoL</title>
+</head>
+
+<body>
+    <header>
+        <h1>Projeto Monochampion LoL</h1>
+        <p>Por que dominar um único campeão pode acelerar sua evolução no <abbr title="League of Legends">LoL</abbr>.
+        </p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a> | <a href="monochampion.html">O que é Monochampion</a> | <a
+            href="vantagens.html">Vantagens</a> | <a href="desvantagens.html">Desvantagens</a> | <a
+            href="escolha.html">Escolha seu Champion</a> | <a href="limites.html">Limites do Campeão</a> | <a
+            href="treino.html">Plano de Treino</a> | <a href="matchups.html">Matchups</a> | <a href="macro.html">Macro
+            Nerd</a> | <a href="zed.html">Mono Zed</a> | <a href="irelia.html">Mono Irelia</a> | <a
+            href="rengar.html">Mono Rengar</a> | <a href="rotina.html">Rotina</a> | <a href="ranking.html">Evolução</a>
+        | <a href="midia.html">Multimídia</a> | <a href="faq.html">FAQ</a> | <a href="formulario.html">Formulário</a> |
+        <a href="desafio7dias.html">Desafio 7 Dias</a>
+    </nav>
+    <hr>
+
+    <main>
+
+        <section>
+            <h2>Universo de League of Legends</h2>
+            <figure>
+                <img src="../img/zed.png" alt="Zed no projeto Monochampion LoL" width="700">
+                <figcaption>Zed — assassino do League of Legends, exemplo de campeão para especialização.</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Monte seu perfil de monochampion</h2>
+            <article>
+                <form action="obrigado.html" method="get">
+                    <fieldset>
+                        <legend>Dados do jogador</legend>
+                        <div><label for="nome">Nome:</label><br><input type="text" id="nome" name="nome"
+                                placeholder="Digite seu nome" required></div>
+                        <div><label for="nick">Nick no LoL:</label><br><input type="text" id="nick" name="nick"
+                                placeholder="Ex.: MonoTop123" required></div>
+                        <div><label for="email">E-mail:</label><br><input type="email" id="email" name="email"
+                                placeholder="seuemail@exemplo.com" required></div>
+                        <div><label for="inicio">Data em que começou a jogar:</label><br><input type="date" id="inicio"
+                                name="inicio"></div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Seu campeão</legend>
+                        <div><label for="campeao">Campeão principal:</label><br><input list="campeoes" id="campeao"
+                                name="campeao" placeholder="Escolha ou digite" required></div>
+                        <datalist id="campeoes">
+                            <option value="Ahri">
+                            <option value="Yasuo">
+                            <option value="Garen">
+                            <option value="Jinx">
+                            <option value="Thresh">
+                            <option value="Lee Sin">
+                            <option value="Riven">
+                            <option value="Lux">
+                        </datalist>
+                        <div><label for="nivel">Quanto você domina o campeão? (0 a 100)</label><br><input type="range"
+                                id="nivel" name="nivel" min="0" max="100" value="50"></div>
+                        <div><label for="cor">Cor que representa seu campeão:</label><br><input type="color" id="cor"
+                                name="cor" value="#3366cc"></div>
+                        <div><label for="arquivo">Envie uma imagem ou anotação de uma partida:</label><br><input
+                                type="file" id="arquivo" name="arquivo"></div>
+                        <div><strong>Rota principal:</strong></div>
+                        <label><input type="radio" name="rota" value="top" required> Top</label>
+                        <label><input type="radio" name="rota" value="jungle"> Jungle</label>
+                        <label><input type="radio" name="rota" value="mid"> Mid</label>
+                        <label><input type="radio" name="rota" value="adc"> ADC</label>
+                        <label><input type="radio" name="rota" value="support"> Support</label>
+                        <div><label><input type="checkbox" name="aceite" required> Confirmo que quero praticar com
+                                consistência.</label></div>
+                        <div><label for="objetivo">Objetivo:</label><br><textarea id="objetivo" name="objetivo" rows="5"
+                                cols="50" placeholder="Escreva o que deseja melhorar"></textarea></div>
+                    </fieldset>
+                    <div><input type="submit" value="Enviar perfil"> <input type="reset" value="Limpar"></div>
+                </form>
+            </article>
+        </section>
+        <aside>
+            <h3>Dica rápida</h3>
+            <p>Ser monochampion não significa ignorar o restante do jogo. Entender funções, objetivos, visão e rotações
+                continua sendo essencial.</p>
+        </aside>
+    </main>
+
+    <hr>
+    <footer>
+    </footer>
+</body>
+
+</html>
